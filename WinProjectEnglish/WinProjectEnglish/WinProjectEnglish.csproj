@@ -1,0 +1,406 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F675CE8A-4D3E-4B62-8408-6D3DB1D1F660}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>WinProjectEnglish</RootNamespace>
+    <AssemblyName>WinProjectEnglish</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="NAudio, Version=1.7.3.0, Culture=neutral, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>bin\Debug\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Audio.cs" />
+    <Compile Include="DailyActivities\Activity3\frmAct_1_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyActivities\Activity3\frmAct_1_3.Designer.cs">
+      <DependentUpon>frmAct_1_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmHelp.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmHelp.Designer.cs">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupations\Activity5\frmAct_3_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupations\Activity5\frmAct_3_5.designer.cs">
+      <DependentUpon>frmAct_3_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupations\Activity3\frmAct_3_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupations\Activity3\frmAct_3_3.designer.cs">
+      <DependentUpon>frmAct_3_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmResult.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmResult.Designer.cs">
+      <DependentUpon>frmResult.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity5\Activity5.cs" />
+    <Compile Include="ModesOfTransportation\Activity3\frmAct_2_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity3\frmAct_2_3.Designer.cs">
+      <DependentUpon>frmAct_2_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DailyActivities\frmDailyActivities.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DailyActivities\frmDailyActivities.Designer.cs">
+      <DependentUpon>frmDailyActivities.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity5\frmAct_2_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity5\frmAct_2_5.designer.cs">
+      <DependentUpon>frmAct_2_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity5\frmResult_Act5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModesOfTransportation\Activity5\frmResult_Act5.designer.cs">
+      <DependentUpon>frmResult_Act5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ModesOfTransportation\frmModesOfTransportation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ModesOfTransportation\frmModesOfTransportation.Designer.cs">
+      <DependentUpon>frmModesOfTransportation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Occupations\frmOccupations.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Occupations\frmOccupations.Designer.cs">
+      <DependentUpon>frmOccupations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Sports\frmSports.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Sports\frmSports.Designer.cs">
+      <DependentUpon>frmSports.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Main\frmMenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Main\frmMenu.Designer.cs">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="DailyActivities\Activity3\frmAct_1_3.resx">
+      <DependentUpon>frmAct_1_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmHelp.resx">
+      <DependentUpon>frmHelp.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupations\Activity5\frmAct_3_5.resx">
+      <DependentUpon>frmAct_3_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupations\Activity3\frmAct_3_3.resx">
+      <DependentUpon>frmAct_3_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModesOfTransportation\Activity3\frmAct_2_3.resx">
+      <DependentUpon>frmAct_2_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DailyActivities\frmDailyActivities.resx">
+      <DependentUpon>frmDailyActivities.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmResult.resx">
+      <DependentUpon>frmResult.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModesOfTransportation\Activity5\frmAct_2_5.resx">
+      <DependentUpon>frmAct_2_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModesOfTransportation\Activity5\frmResult_Act5.resx">
+      <DependentUpon>frmResult_Act5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ModesOfTransportation\frmModesOfTransportation.resx">
+      <DependentUpon>frmModesOfTransportation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Occupations\frmOccupations.resx">
+      <DependentUpon>frmOccupations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Sports\frmSports.resx">
+      <DependentUpon>frmSports.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Main\frmMenu.resx">
+      <DependentUpon>frmMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoP.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\FondoPrincipal.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DailyActivities\Activity1\" />
+    <Folder Include="DailyActivities\Activity2\" />
+    <Folder Include="DailyActivities\Activity4\" />
+    <Folder Include="DailyActivities\Activity5\" />
+    <Folder Include="ModesOfTransportation\Activity1\" />
+    <Folder Include="ModesOfTransportation\Activity2\" />
+    <Folder Include="ModesOfTransportation\Activity4\" />
+    <Folder Include="Occupations\Activity1\" />
+    <Folder Include="Occupations\Activity2\" />
+    <Folder Include="Occupations\Activity4\" />
+    <Folder Include="Sports\Activity1\" />
+    <Folder Include="Sports\Activity2\" />
+    <Folder Include="Sports\Activity3\" />
+    <Folder Include="Sports\Activity4\" />
+    <Folder Include="Sports\Activity5\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\play button2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha_abajo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\PlayButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\RecButton.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Tick.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Cross.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\flecha-derecha.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Rocket.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_plane.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Balloon.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_ATV.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_helicopter.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Motorboat.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Pickup.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_ship.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Submarine.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Butler.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Cook.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Detective.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Driver.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Fireman.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_To_Pronounce_Guide.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Pilot.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Racer.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Sailor.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Media\Images\baloon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Media\Images\gifGuitar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Media\Images\gifMidFace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="bin\Debug\Media\Images\gifTryAgain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="AxShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="ShockwaveFlashObjects">
+      <Guid>{D27CDB6B-AE6D-11CF-96B8-444553540000}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\baloon.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifGuitar.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifHappyCongrats.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifMidFace.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\gifTryAgain.gif" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_DoHomework.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_GetDressed.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_GoToMarket.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_HaveDinner.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_TakeAShower.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Wake-Up.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_WalkTheDog.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_WatchTV.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Work.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Baseball.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Bodybuilding.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Chess.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Cycling.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Gymnastics.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Hockey.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Karate.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Skiing.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\How_to_Pronounce_Surf.wav" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ICON%281%29.ico" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
